@@ -1,4 +1,97 @@
-body {
-  background-color: #dadada;
-  font-size: 10px;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+body {
+  background-color: #dbdadc;
+  font-size: 20px;
+}
+.container {
+ width: 375px;
+ background-color: #dbdadc;
+
+ padding-top: 20px;
+ margin: 40px auto;
+}
+
+.container img{width: 100%; height: 250px;}
+.container  h1 {text-align: center;}
+.heading {font-family: sans-serif; text-transform: uppercase;}
+
+.previewbaku{margin: 10px 0px;
+    position: relative;}
+.previewlondon{margin: 10px 0px;
+    position: relative;}
+.previewmadrid{margin: 10px 0px;
+    position: relative;}
+.previewrome{margin: 10px 0px;
+    position: relative;}
+
+.bakutext{position: absolute;
+    top:7%;
+    left:7%;}
+.londontext{position: absolute;
+    top:7%;
+    left:7%;}
+.madridtext{position: absolute;
+    top:7%;
+    left:7%;}
+.rometext{position: absolute;
+    top:7%;
+    left:7%;}
+
+
+
+@media screen and (min-width: 575px){
+.previewbaku{display:inline-block; float: left; width: 335px; margin: 10px 0px 5px 0px;}
+.previewlondon{display:inline-block; float: right; width: 335px; margin: 10px 0px 5px 0px;}
+.previewmadrid{display:inline-block; float: left; width: 335px; margin: 0px 0px 5px 0px;}
+.previewrome{display:inline-block; float: right; width: 335px; margin: 0px 0px 5px 0px;}
+.container {width: 750px;
+            height: 800px; padding: 40px;}
+div {
+    width: 40%;
+    padding: 0px 5px;}
+.container img{height:200px;}
+.bakutext{
+  position: absolute;
+  top:10%;
+  left:8%;}
+.londontext{
+  position: absolute;
+  top:10%;
+  left:8%;}
+.madridtext{
+  position: absolute;
+  top:10%;
+  left:8%;}
+.rometext{
+  position: absolute;
+  top:10%;
+  left:8%;}
+}
+
+
+@media screen and (min-width: 991px){
+  .container{width: 100%; height: 1000px; padding: 20px 23% 0px 23%;}
+  .previewbaku{display: inline; margin: 40px 0px; float: none;}
+  .previewlondon{display: inline; margin: 40px 0px; float: none;}
+  .previewmadrid{display: inline; margin: 40px 0px; float: none;}
+  .previewrome{display: inline; margin: 40px 0px; float: none;}
+  .bakutext{
+    position: absolute;
+    top:-190px;
+    left: 20px;}
+  .londontext{
+    position: absolute;
+    top:-190px;
+    left:20px;}
+  .madridtext{
+    position: absolute;
+    top:-190px;
+    left:20px;}
+  .rometext{
+    position: absolute;
+    top:-190px;
+    left:20px;}
+  .container img{height: 240px; width: 240px; padding: 20px 0px;}
+    }
